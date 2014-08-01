@@ -1,3 +1,49 @@
-.red-text {
-    color: #ff0000;
+.accordion-head {
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    border: 2px solid blue;
+    padding: 1%;
+}
+
+.reordered-list li {
+    padding: 0.5%;
+    margin: 2px;
+    background-color: #DDDDFF;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 25%;
+    min-width: 100px;
+}
+.reordered-list {
+    list-style-type: none;
+}
+
+h1 {
+    color: #777777;
+    font-family: 'Arial Black';
+}
+
+body {
+    font-family: Arial;
+    background-color: #FAFAFA;
+}
+
+#accordion-div {
+    width: 50vw;
+}
+
+td {
+    vertical-align: top;
+}
+
+#lorem-ipsum {
+    padding: 0 2% 0 2%;
+}
+
+#explosions {
+    background-color: #FFAA00;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
 }
