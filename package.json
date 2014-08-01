@@ -1,0 +1,26 @@
+{
+  "name": "TestNodeProject",
+  "version": "1.0.0",
+  "description": "Test of Node.js",
+  "main": "app.js",
+  "private": "true",
+  "scripts": {
+    "start": "nodemon --debug app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PatrickLove/TestNodeProject.git"
+  },
+  "author": "Patrick Love",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PatrickLove/TestNodeProject/issues"
+  },
+  "homepage": "https://github.com/PatrickLove/TestNodeProject",
+  "dependencies": {
+    "express": "^4.7.2",
+    "jade": "^1.5.0",
+    "ejs": "^1.0.0",
+    "nodemon": "^1.2.1"
+  }
+}
