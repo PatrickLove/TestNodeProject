@@ -27,11 +27,18 @@ app.get('/login', function(req, res){
 app.post('/main', function(req, res){
     var usrname = req.body.username,
         pwd = req.body.password;
-    if(pwd && usrname && loginManager.validateLogin(usrname, pwd)){
-        res.render('TestHTML.html');
+    if(pwd && usrname){
+        loginManager.validateLogin(usrname, pwd, function(vaild){
+            if(vaild){
+                res.render('TestHTML.html');
+            }
+            else{
+                res.redirect('/login?dispText=Invalid%20Username%20or%20Password');
+            }
+        });
     }
     else{
-        res.redirect('/login?dispText=Invalid%20Username%20or%20Password');
+        res.redirect('/login?dispText=Missing%20Field');
     }
 })
 
